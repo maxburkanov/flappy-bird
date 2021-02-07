@@ -20,7 +20,7 @@ setInterval(function(){
     let cTop = -(500-characterTop);
     if((characterTop>480)||((blockLeft<20)&&(blockLeft>-50)&&((cTop<holeTop)||(cTop>holeTop+130)))){
         alert("Game over. Score: "+(counter-1));
-        character.style.top = 50 + "px";
+        character.style.top = 300 + "px";
         counter=0;
     }
 },20);
