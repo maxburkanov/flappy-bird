@@ -40,3 +40,8 @@
   top: 100px;
   border-radius: 50%;
 }
+
+.score {
+  margin: auto;
+  text-align: center;
+}

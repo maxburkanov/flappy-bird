@@ -4,12 +4,14 @@ let character = document.getElementById("character");
 let html = document.querySelector('html')
 let jumping = 0;
 let counter = 0;
+let score = document.querySelector(".score")
 
 hole.addEventListener('animationiteration', () => {
     let random = -((Math.random()*300)+150);
     hole.style.top = random + "px";
     counter++;
-});
+    score.innerHTML = counter
+  });
 setInterval(function(){
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     if(jumping==0){
