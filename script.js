@@ -26,9 +26,10 @@ setInterval(function(){
 },20);
 
 html.addEventListener('keypress', jump)
+html.addEventListener('click', jump)
 
 function jump(e){
-  if(e.keyCode === 32) {
+  // if(e.keyCode === 32) {
 
     jumping = 1;
     let jumpCount = 0;
@@ -44,5 +45,5 @@ function jump(e){
       }
       jumpCount++;
     },15);
-  }
+  // }
 }
